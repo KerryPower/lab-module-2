@@ -8,6 +8,14 @@
   <meta name="keywords" content="Software Enginnering, Industry Of Data, HTML Exercise">
   <meta name="author" content="Kerry Power">
   <title>Lab2 Exercise1</title>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -45,11 +53,85 @@
       </li>
     </ol>
   </article>
+  <article>
+    <h2>Table Exercise</h2>
+    <table><!--table from https://www.w3schools.com/html/html_tables.asp-->
+      <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th colspan="2">Country</th>
+      </tr>
+      <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+        <td>Foreman</td>
+      </tr>
+      <tr>
+        <td>Fonterra</td>
+        <td>Johny Smith</td>
+        <td>New Zealand</td><!---->
+        <td>Director</td>
+      </tr>
+      <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+        <td>PR</td>
+      </tr>
+      <tr>
+        <td>Ernst Handel</td>
+        <td>Roland Mendel</td>
+        <td>Austria</td>
+        <td>H&S</td>
+      </tr>
+      <tr>
+        <td>Island Trading</td>
+        <td>Helen Bennett</td>
+        <td>UK</td>
+        <td>Manager</td>
+      </tr>
+      <tr>
+        <td>Laughing Bacchus Winecellars</td>
+        <td>Yoshi Tannamuri</td>
+        <td>Canada</td>
+        <td>Apprentice</td>
+      </tr>
+      <tr>
+        <td>Magazzini Alimentari Riuniti</td>
+        <td rowspan="2">Giovanni Rovelli</td>
+        <td>Italy</td>
+        <td>IT</td>
+      </tr>
+      <tr>
+        <td>Bunderberg</td>
+        <td>Geoff Burgundy</td>
+        <td>Australia</td>
+        <td>Janitor</td>
+      </tr>
+    </table>
+  </article>
+  <article>
+    <h2>Linking media elements</h2>
+    <img src="https://picsum.photos/400/400" alt="sample img" height="500px" width="500px">
+    <img src="/src/assets/html_lab_image.jpg" alt="clouds" height="500px" width="500px">
+    <video autoplay width="250">
+      <source src="/src/assets/flower.webm" type="video/webm">
+      Sorry, your browser doesn't support embedded videos.
+    </video>
+    <audio autoplay src="/src/assets/t-rex-roar.mp3">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+
+
+  </article>
 
   <header>
     <nav>
       <!-- works like <a href="/index.html">Home</a> -->
       <a href="/">Home</a>
+      <a href="form.html">Form</a>
+      <a href="index.html">index</a>
     </nav>
   </header>
 

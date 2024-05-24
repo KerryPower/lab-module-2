@@ -5,10 +5,58 @@
 </head>
 
 <body>
+  <form method="POST" action="http://127.0.0.1:5500/form.html">
+    <div>
+      <input type="text" id="input1">
+      <label for="input1">1st text input</label>
+    </div>
+    <div>
+      <input type="text" id="input2">
+      <label for="input2">2nd text input</label>
+    </div>
+    <div id="languages">
+      <label for="languages">Select your favourite coding language:</label>
+      <input type="radio" name="javaButton" value="java">
+      <label for="javaButton">JAVA</label>
+      <input type="radio" name="pythonButton" value="python">
+      <label for="pythonButton">PYTHON</label>
+      <input type="radio" name="rubyButton" value="ruby">
+      <label for="rubyButton">RUBY</label>
+    </div>
+    <div id="cartype">
+      <label for="cartype">Select type of car you own:</label>
+      <input type="checkbox" name="electric" value="electric">
+      <label for="car">Electric</label>
+      <input type="checkbox" name="hybrid" value="hybrid">
+      <label for="car">Hybrid</label>
+      <input type="checkbox" name="combustion" value="combustion">
+      <label for="truck">Combustion</label>
+    </div>
+    <div id="cartype">
+      <label for="cartype">Which brand of car do you own?</label>
+      <select name="brand" id="brand">
+        <option value="porsche">Porsche</option>
+        <option value="volkswagen">Volkswagen</option>
+        <option value="holden">Holden</option>
+        <option value="tesla">Tesla</option>
+        <option value="mazda">Mazda</option>
+        <option value="ford">Ford</option>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select>
+      </div>
+      <div>
+        <button type="submit">Submit form</button>
+      </div>
+  </form>
   <header>
     <nav>
       <!-- works like <a href="/index.html">Home</a> -->
       <a href="/">Home</a>
+      <a href="form.html">Form</a>
+      <a href="index.html">index</a>
     </nav>
   </header>
 
