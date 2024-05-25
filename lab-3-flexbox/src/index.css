@@ -42,7 +42,7 @@ a {
 
 /* Add your answers here, do not modify the above CSS */
 .flex-container {
-    display: flexbox;
+    display: flex;
 }
 .flex-item-1 {
     flex: 1;
@@ -55,4 +55,11 @@ a {
 }
 .flex-item-4 {
     flex: 4;
+}
+.flex-center {
+    align-items: center;
+    justify-content: center;
+}
+.flex-space-between {
+    justify-content: space-between;
 }
