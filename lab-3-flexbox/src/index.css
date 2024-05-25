@@ -43,23 +43,61 @@ a {
 /* Add your answers here, do not modify the above CSS */
 .flex-container {
     display: flex;
+    flex-direction: row;
 }
+
 .flex-item-1 {
     flex: 1;
 }
+
 .flex-item-2 {
     flex: 2;
 }
+
 .flex-item-3 {
     flex: 3;
 }
+
 .flex-item-4 {
     flex: 4;
 }
+
 .flex-center {
     align-items: center;
     justify-content: center;
 }
+
 .flex-space-between {
     justify-content: space-between;
+}
+
+.flex-basis-item-50 {
+    flex-basis: 25%;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-menu {
+    margin-left:0px;
+    list-style-type: none;
+    font-size: 30px;
+    justify-content: center;
+    font-weight: bold;
+    flex-basis: auto;
+   
+}
+.flex-menu :nth-child(4) { order: 5; }
+
+.first-item, 
+.second-item,
+.third-item,
+.fourth-item,
+.fifth-item {
+    margin: 2px;
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1;
+
 }
