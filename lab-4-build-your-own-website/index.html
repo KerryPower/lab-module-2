@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kerry Power">
+    <title>CV for Kerry Power</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: rgb(197, 238, 197);
+        }
+
+        .flex-container {
+            display: flex;
+        }
+
+        .menu {
+            background-color: lightblue;
+            width: 25%;
+            height: 100vh;
+            flex-direction: column;
+            align-items: center;
+            margin: 0.6%;
+            text-align: center;
+}
+.content{
+    width: 75%;
+    height: 100vh;
+    flex-direction: column;
+}
+
+        .background-2 {
+            background-color: skyblue;
+        }
+        .main {
+flex-direction: row;
+        }
+
+        .flex-menu {
+            width: 75%;
+            text-align: center;
+            margin: 5%;
+            color: white;
+            flex-direction: column;
+            justify-content: space-evenly;
+            flex-grow: 1;
+        }
+
+        .first-item,
+        .second-item,
+        .third-item,
+        .fourth-item,
+        .fifth-item,
+        .sixth-item {
+            border-radius: 10%;
+            padding: 30px;
+            margin-top: 10px;
+        }
+
+        .h-50 {
+            height: 50px;
+        }
+
+        .f-30 {
+            font-size: 30px;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .img {
+            width: 100%;
+            height: 0;
+            padding-bottom: 100%;
+            background-color: tomato;
+            border-radius: 10%;
+            text-align: center;
+            color: aliceblue;
+        }
+        .start-hidden{
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="flex-container main">
+
+        <section id="menu" class="menu flex-container">
+            <header class="f-30 bold">Kerry Power's Dynamic CV</header>
+            <div id="img" class="img">IMG goes here</div>
+            <div class="flex-container flex-menu background-1">
+                <div onmouseover="displayContent()" ="background-2 first-item">Personal Details</div>
+                <div onmouseover="displayContent()" class="background-2 second-item">Personel Statement</div>
+                <div onmouseover="displayContent()" class="background-2 third-item">Key Skills and Compentancies</div>
+                <div onmouseover="displayContent()" class="background-2 fourth-item">Work/Employemnt History</div>
+                <div onmouseover="displayContent()" class="background-2 fifth-item">Qualifications/Education</div>
+                <div onmouseover="displayContent()" class="background-2 sixth-item">Interests and Hobbies</div>
+            </div>
+        </section>
+
+        <section id="content" class="start-hidden">
+            <div id="personalDetails">
+                <h1>Personal Details</h1>
+            </div>
+            <div id="personalStatement" class="start-hidden">
+                <h1>Personel Statement</h1>
+
+            </div>
+            <div id="keySkills" class="start-hidden">
+                <h1>Key Skills and Compentancies</h1>
+
+            </div>
+            <div id="workHistory" class="start-hidden">
+                <h1>Work/Employemnt History</h1>
+
+            </div>
+            <div id="Qualifications" class="start-hidden">
+                <h1>Qualifications/Education</h1>
+            </div>
+            <div id="interests" class="start-hidden">
+                <h1>Interests and Hobbies</h1>
+            </div>
+
+
+        </section>
+    </div>
+
+</body>
+
+</html>
