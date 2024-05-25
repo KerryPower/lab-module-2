@@ -41,3 +41,18 @@ a {
 }
 
 /* Add your answers here, do not modify the above CSS */
+.flex-container {
+    display: flexbox;
+}
+.flex-item-1 {
+    flex: 1;
+}
+.flex-item-2 {
+    flex: 2;
+}
+.flex-item-3 {
+    flex: 3;
+}
+.flex-item-4 {
+    flex: 4;
+}
