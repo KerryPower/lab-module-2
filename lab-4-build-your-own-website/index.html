@@ -20,23 +20,25 @@
         .menu {
             background-color: lightblue;
             width: 25%;
-            height: 100vh;
+            height: 100%;
             flex-direction: column;
             align-items: center;
             margin: 0.6%;
             text-align: center;
-}
-.content{
-    width: 75%;
-    height: 100vh;
-    flex-direction: column;
-}
+        }
+
+        .content {
+            width: 75%;
+            height: 100vh;
+            flex-direction: column;
+        }
 
         .background-2 {
             background-color: skyblue;
         }
+
         .main {
-flex-direction: row;
+            flex-direction: row;
         }
 
         .flex-menu {
@@ -81,8 +83,12 @@ flex-direction: row;
             text-align: center;
             color: aliceblue;
         }
-        .start-hidden{
+
+        .start-hidden {
             display: none;
+        }
+        .shown {
+            display: block;
         }
     </style>
 
@@ -96,17 +102,18 @@ flex-direction: row;
             <header class="f-30 bold">Kerry Power's Dynamic CV</header>
             <div id="img" class="img">IMG goes here</div>
             <div class="flex-container flex-menu background-1">
-                <div onmouseover="displayContent()" ="background-2 first-item">Personal Details</div>
-                <div onmouseover="displayContent()" class="background-2 second-item">Personel Statement</div>
-                <div onmouseover="displayContent()" class="background-2 third-item">Key Skills and Compentancies</div>
-                <div onmouseover="displayContent()" class="background-2 fourth-item">Work/Employemnt History</div>
-                <div onmouseover="displayContent()" class="background-2 fifth-item">Qualifications/Education</div>
-                <div onmouseover="displayContent()" class="background-2 sixth-item">Interests and Hobbies</div>
+                <div onclick="displayContent('personalDetails')" class="background-2 first-item">Personal Details
+                </div>
+                <div onclick="displayContent('personalStatement')" class="background-2 second-item">Personel Statement</div>
+                <div onclick="displayContent('keySkills')" class="background-2 third-item">Key Skills and Compentancies</div>
+                <div onclick="displayContent('workHistory')" class="background-2 fourth-item">Work/Employemnt History</div>
+                <div onclick="displayContent('Qualifications')" class="background-2 fifth-item">Qualifications/Education</div>
+                <div onclick="displayContent('interests')" class="background-2 sixth-item">Interests and Hobbies</div>
             </div>
         </section>
 
-        <section id="content" class="start-hidden">
-            <div id="personalDetails">
+        <section id="content">
+            <div id="personalDetails" class="start-hidden">
                 <h1>Personal Details</h1>
             </div>
             <div id="personalStatement" class="start-hidden">
@@ -133,5 +140,12 @@ flex-direction: row;
     </div>
 
 </body>
+
+<script>
+    function displayContent(sectionId) {
+    let section = document.getElementById(sectionId);
+    section.classList.toggle("shown");
+}
+</script>
 
 </html>
