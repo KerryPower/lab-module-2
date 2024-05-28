@@ -104,7 +104,7 @@
             <div class="flex-container flex-menu background-1">
                 <div onclick="displayContent('personalDetails')" class="background-2 first-item">Personal Details
                 </div>
-                <div onclick="displayContent('personalStatement')" class="background-2 second-item">Personel Statement</div>
+                <div onclick="displayContent('personalStatement')" class="background-2 second-item">Personal Statement</div>
                 <div onclick="displayContent('keySkills')" class="background-2 third-item">Key Skills and Compentancies</div>
                 <div onclick="displayContent('workHistory')" class="background-2 fourth-item">Work/Employemnt History</div>
                 <div onclick="displayContent('Qualifications')" class="background-2 fifth-item">Qualifications/Education</div>
@@ -117,7 +117,7 @@
                 <h1>Personal Details</h1>
             </div>
             <div id="personalStatement" class="start-hidden">
-                <h1>Personel Statement</h1>
+                <h1>Personal Statement</h1>
 
             </div>
             <div id="keySkills" class="start-hidden">
@@ -143,9 +143,16 @@
 
 <script>
     function displayContent(sectionId) {
-    let section = document.getElementById(sectionId);
-    section.classList.toggle("shown");
-}
+        let sections = document.querySelectorAll('section#content > div');
+        
+        sections.forEach(section => {
+            if (section.id === sectionId) {
+                section.classList.add("shown");
+            } else {
+                section.classList.remove("shown");
+            }
+        });
+    }
 </script>
 
 </html>
